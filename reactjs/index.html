@@ -13,15 +13,46 @@
 <body>
     <div id="root"></div>
     <script type="text/babel">
+function Header(){
+    return(
+        <header>
+            <h1>
+                Motun's blog
+                </h1></header>
+    )
+}
+function Main(){
+    return(
+        <p> hello</p>
+    )
+}
+ReactDOM.render(
+    <div>
+    <Header/>
+    <Main/>
+    </div>,
+    document.getElementById("root")
+)
+
+        {/*let robot = "😁";
+        let smile = "😃";
+        let angry = "😈";
+        let name = "React";
                 ReactDOM.render(
-          <ul>
+         <ul>
             <li>money</li>
-            <li>money</li>
-            <li>money</li>
+            <li>fame</li>
+            <li>power</li>
+            <li>{robot}</li>
+            <li>{smile}</li>
+            <li>{angry}</li>
+            <li>{name.toUpperCase()}</li>
+            <li>{name.length}</li>
 
             </ul>,
             document.getElementById("root")
-        );
+        );*/}
+
     </script>
     <script type="text/javascript">
   
