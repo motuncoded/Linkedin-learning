@@ -13,24 +13,49 @@
 <body>
     <div id="root"></div>
     <script type="text/babel">
-function Header(){
+function Header(props){
+    //console.log(props)
+    
     return(
         <header>
             <h1>
-                Motun's blog
+                {props.name}blog
                 </h1></header>
     )
 }
-function Main(){
+function Main(props){
     return(
-        <p> hello</p>
+        <div>
+        <p> hello {props.adjective}</p>
+        <ul>
+            {dishes.map((dish, i)=>(
+                <li key={i}>{dish}</li>
+            ))}</ul>
+        </div>
+    )
+}
+function Footer(props){
+    return(
+        <footer>
+            <p>Copyright {props.year}</p></footer>
+    )
+}
+const dishes=[
+    "rice",
+    "beans",
+    "potatoes"
+]
+function App(){
+    return(
+        <div>
+    <Header name="Motun"/>
+    <Main adjective={amazing} dishes={dishes}/>
+    <Footer year={new Date().getFullYear()} />
+    </div>
     )
 }
 ReactDOM.render(
-    <div>
-    <Header/>
-    <Main/>
-    </div>,
+   <App/>,
     document.getElementById("root")
 )
 

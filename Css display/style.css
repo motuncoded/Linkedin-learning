@@ -1,0 +1,41 @@
+p{
+    /*.border:3px solid black*/
+    
+
+}
+p * {
+    border:  3px dotted green;
+}
+strong{
+    background-color: yellow;
+    padding: 1rem;
+}
+em{
+    background-color: pink;
+    margin: 1rem;
+}
+a{
+    
+    width: 1000px;
+}
+h1{
+    border: 3px dotted green;
+}
+
+section{
+    border:3px dashed blue
+}
+h4{
+    display: none;
+}
+h6{
+visibility: hidden;}
+.row{
+    border: 2px solid red;
+    /*display: flex;*/
+
+}
+.box{
+flex-basis: 20%;  
+ border: 2px dotted blue;
+}
