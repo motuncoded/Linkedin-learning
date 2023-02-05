@@ -1,0 +1,15 @@
+a{
+  text-decoration: none;
+  padding: 1rem;
+}
+a:link{
+  color: black;
+}
+nav{
+  padding: 1rem 2rem;
+  background-color: antiquewhite;
+}
+/*nav a.active{
+
+  font-weight: bold;
+}*/
